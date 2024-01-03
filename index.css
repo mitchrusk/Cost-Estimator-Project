@@ -11,6 +11,7 @@ body {
 
 h1 {
   color: rgb(83, 49, 156);
+  margin: 32px 0 64px 0;
 }
 
 .container {
@@ -139,6 +140,7 @@ h1 {
 .slider {
   width: 100%;
   position: relative;
+  margin-bottom: 16px;
 }
 .slider .bar {
   width: 100%;
@@ -208,6 +210,7 @@ color: rgb(166, 166, 166);
   font-weight: bold;
   color: rgb(83, 49, 156);
   transition: 0.15s transform ease;
+  position: relative;
 }
 
 .card:hover {
@@ -248,4 +251,20 @@ color: rgb(166, 166, 166);
 .card button:hover {
   cursor: pointer;
   transform: scale(1.05);
+}
+
+.card .save-header {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(53, 10, 74, 1) 36%,
+    rgba(83, 49, 156, 1) 100%
+  );
+  color: white;
+  width: 100%;
+  position: absolute;
+  top: -24px;
+  left: 0;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
