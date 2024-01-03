@@ -177,5 +177,18 @@ h1 {
 
 .slider .point:hover {
   cursor: pointer;
-  transform: scale(1.5);
+  transform: scale(1.15);
+}
+
+.slider .scale {
+  width: 100%;
+}
+
+.slider .scale ul {
+list-style: none;
+display: flex;
+justify-content: space-between;
+padding: 0;
+font-weight: bold;
+color: rgb(166, 166, 166);
 }
