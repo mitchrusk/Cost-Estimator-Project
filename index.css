@@ -172,5 +172,10 @@ h1 {
   top: -5px;
   left: 29%;
   border: 2px solid white;
+  transition: 0.15s transform ease;
 }
 
+.slider .point:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+}
