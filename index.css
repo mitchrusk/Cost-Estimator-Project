@@ -17,6 +17,7 @@ h1 {
   background-color: white;
   width: 100%;
   max-width: 900px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -206,11 +207,16 @@ color: rgb(166, 166, 166);
   text-align: center;
   font-weight: bold;
   color: rgb(83, 49, 156);
-  text-transform: uppercase;
+  transition: 0.15s transform ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
 }
 
 .card .top-section {
   padding: 8px;
+  text-transform: uppercase;
 }
 
 .card .top-section p {
@@ -226,4 +232,20 @@ color: rgb(166, 166, 166);
   width: 30%;
   border: 1px solid rgb(210, 210, 210);
   border-radius: 2px;
+}
+
+.card button {
+  border: none;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(83, 49, 156);
+  margin: 8px 0;
+  padding: 16px;
+  border-radius: 10px;
+  transform: 0.15s transform ease;
+}
+
+.card button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }
