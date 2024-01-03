@@ -73,10 +73,12 @@ h1 {
 
 .toggle-wrapper {
   display: flex;
+  margin: 30px;
 }
 
 .toggle-wrapper img {
   height: 40px;
+  margin: 0 16px;
 }
 
 .toggle {
@@ -84,11 +86,24 @@ h1 {
   height: 32px;
   width: 140px;
   border-radius: 20px;
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 16px;
+  margin: 4px 0;
+  padding: 0 4px 0 16px;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 12px;
+}
+
+.toggle span:first-of-type {
+  color: white;
+}
+
+.toggle span:last-of-type {
+  background-color: white;
+  color: rgb(83, 49, 156);
+  padding: 4px 16px;
+  border-radius: 20px;
 }
