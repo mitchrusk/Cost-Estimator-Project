@@ -188,12 +188,12 @@ h1 {
 }
 
 .slider .scale ul {
-list-style: none;
-display: flex;
-justify-content: space-between;
-padding: 0;
-font-weight: bold;
-color: rgb(166, 166, 166);
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  font-weight: bold;
+  color: rgb(166, 166, 166);
 }
 
 .card-wrapper {
@@ -267,4 +267,60 @@ color: rgb(166, 166, 166);
   left: 0;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
+}
+
+@media only screen and (max-width: 750px) {
+  h1 {
+    margin: 0 0 30px 0;
+  }
+  .tabs .active::before {
+    width: 100%;
+    bottom: -3px;
+    left: -0.5%;
+  }
+  .tabs {
+    margin-bottom: 5px;
+  }
+  .line {
+    top: 70px;
+  }
+  .sessions-card {
+    width: 90%;
+    box-sizing: border-box;
+  }
+  .card-wrapper {
+    flex-wrap: wrap-reverse;
+  }
+  .card {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 0 9px;
+  }
+  h1 {
+    margin: 12px 0;
+  }
+  .tabs .active::before {
+    width: 100%;
+    bottom: -9px;
+    left: -0.5%;
+  }
+  .tabs {
+    margin-bottom: 0px;
+  }
+  .tabs p {
+    padding: 5px;
+  }
+  .sessions-card {
+    width: 100%;
+  }
+  .card {
+    width: 100%;
+  }
+  .container {
+    padding: 0 16px;
+  }
 }
